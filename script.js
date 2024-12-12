@@ -111,6 +111,7 @@ function chatWidget(){
         user-select: none;
       }
       .semi-bold{
+        display: inline;
         font-weight: 600;
       }
       .chat-unread-message-icon{
@@ -627,8 +628,7 @@ function chatWidget(){
         for (let i = 0; i < this.mobileUserAgents.length ; i++){
           if (userAgent.includes(this.mobileUserAgents[i])) return true
         }
-        alert(window.navigator.userAgent)
-        alert(isMobile)
+        alert(window.navigator.userAgent.toLowerCase())
         return false
       }, 
   
